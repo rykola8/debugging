@@ -11,3 +11,6 @@ else
 password += randm.choice(string.ascii_letters)
 
 print("Jauna parole:", password)
+
+# Kādas kļūdas izdevies atrast?
+# 
