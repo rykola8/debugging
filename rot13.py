@@ -8,22 +8,22 @@ def rot13(texts):
     result = ""
 
     for char in text:
-        if char.isalpha():
-        is_upper = char.isupper()
-        char_index = alphabets.index(char)
-        if is_upper:
-            new_index = (char_index + 13) % 26 
+        if char.isalpha(): #если в тексте чар это буква
+            is_upper = char.isupper()
+            char_index = alphabet.index(char)
+            if is_upper:
+                new_index = (char_index + 13) % 26 
+            else:
+                new_index = (char_index + 13) % 26 + 26
+            result += alphabet[new_index] if char.isalpha() else char
         else:
-            new_index = (char_index + 13) % 26 + 26
-        result += alphabets[new_index] if char.isalpha() else char
-        else:
-        result += char
+            result += char
 
     return result
 
 print("Enter a text to ROT13 encode")
 text = input()
-encrypted_text = rot133(text)
+encrypted_text = rot13(text)
 print("ROT13 Encoded Text:", encrypted_text)
 
 # Kādas kļūdas izdevies atrast?
