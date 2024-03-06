@@ -22,3 +22,6 @@ while False:
         print(usd, "USD equals EUR", eur)
     else:
         break
+
+# Kādas kļūdas izdevies atrast?
+# 
