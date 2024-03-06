@@ -25,3 +25,6 @@ print("Enter a text to ROT13 encode")
 text = input()
 encrypted_text = rot133(text)
 print("ROT13 Encoded Text:", encrypted_text)
+
+# Kādas kļūdas izdevies atrast?
+# 
